@@ -1,0 +1,23 @@
+---
+/*
+  This is not a layout but just a component that's used in layouts.
+*/
+---
+
+    <script
+      is:inline
+      src='https://unpkg.com/littlefoot/dist/littlefoot.js'
+      type='application/javascript'
+    ></script>
+    <script is:inline type='application/javascript'>
+    const littlefootOptions = {
+      scope: document,
+      hoverDelay: 100,
+      preventPageScroll: false,
+    }
+      littlefoot.default(littlefootOptions)
+    </script>
+    <link
+      rel='stylesheet'
+      href='https://unpkg.com/littlefoot/dist/littlefoot.css'
+    />
